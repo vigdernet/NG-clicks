@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>intro</title>
+		<link rel="stylesheet" href="css\style.css" />
+	</head>
+	<body>
+		<h1> This is my first angular </h1>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+		<script src='clicks.js'></script>
+		
+		
+		<div ng-app="myapp">
+			<div ng-controller="main as vm">
+				<h1 ng-bind="vm.text"></h1>
+				<p>
+					You clicked <span ng-bind="vm.clicks"></span> times
+				</p>
+				<button ng-click="vm.clicked()">Click Me</button>
+			</div>
+		</div>		
+	
+		
+	</body>
+</html>
+
